@@ -1,6 +1,22 @@
-﻿Public Class Login
+﻿Imports System.Data.SqlClient
+Public Class Login
+
+    Dim conexionSQL As SqlConnection
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        conexionSQL = New SqlConnection("server=MSI; database=h_san_jose; integrated security=true")
+        Try
+            conexionSQL.Open()
+            'MessageBox.Show("Conexión exitosa a la base de datos", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            MessageBox.Show("Error al conectar a la base de datos: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            conexionSQL.Close()
+        End Try
+    End Sub
+
     Private Sub User_Click(sender As Object, e As EventArgs) Handles User.Click
         User.Text = ""
+
     End Sub
 
     Private Sub password_Click(sender As Object, e As EventArgs) Handles password.Click
@@ -23,4 +39,6 @@
             btnLogin.PerformClick()
         End If
     End Sub
+
+
 End Class
