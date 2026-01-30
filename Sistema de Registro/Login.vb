@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class Login
-
+    'Conexion a la base de datos SQL Server
     Dim conexionSQL As SqlConnection
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conexionSQL = New SqlConnection("server=MSI; database=h_san_jose; integrated security=true")
@@ -23,34 +23,42 @@ Public Class Login
         password.Text = ""
     End Sub
 
+
+
+    'Evento del botón de inicio de sesión
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If String.IsNullOrWhiteSpace(User.Text) Or String.IsNullOrWhiteSpace(password.Text) Then
             MessageBox.Show("Por favor, ingrese usuario y contraseña", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
+        Dim usuario As String = User.Text.Trim() '.Trim() elimina espacios en blanco al inicio y al final
+        Dim contrasena As String = password.Text.Trim()
+        Dim conexionString As String = "server=MSI; database=h_san_jose; integrated security=true"
+
+        Using conexion As New SqlConnection(conexionString)
+            Try
+                conexion.Open()
+                Dim consulta As String = "SELECT COUNT(*) FROM Usuario Where userName = @userName and password = @password"
+                Using comando As New SqlCommand(consulta, conexion)
+                    comando.Parameters.AddWithValue("@userName", usuario) 'Envia el parametro de usuario
+                    comando.Parameters.AddWithValue("@password", contrasena) 'Envia el parametro de contraseña
+                    Dim resultado As Integer = Convert.ToInt32(comando.ExecuteScalar()) 'Ejecuta la consulta y obtiene el resultado
+
+                    If resultado > 0 Then
+                        Dim Menu_Principal As New Menu_Principal()
+                        Menu_Principal.Show()
+                        Me.Hide()
+                    Else
+                        MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End If
+                End Using
+
+            Catch ex As Exception
+                MessageBox.Show("Error al conectar a la base de datos: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End Using
 
 
-        If User.Text = "admin" And password.Text = "admin123" Then
-            Dim Menu_Principal As New Menu_Principal()
-            Menu_Principal.Show()
-            Me.Hide()
-        Else
-            MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
     End Sub
-
-    Private Sub password_KeyDown(sender As Object, e As KeyEventArgs) Handles password.KeyDown
-        If String.IsNullOrWhiteSpace(User.Text) Or String.IsNullOrWhiteSpace(password.Text) Then
-            MessageBox.Show("Por favor, ingrese usuario y contraseña", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        If e.KeyCode = Keys.Enter Then
-            e.SuppressKeyPress = True
-            btnLogin.PerformClick()
-        End If
-    End Sub
-
-
 End Class
