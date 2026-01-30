@@ -24,6 +24,13 @@ Public Class Login
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        If String.IsNullOrWhiteSpace(User.Text) Or String.IsNullOrWhiteSpace(password.Text) Then
+            MessageBox.Show("Por favor, ingrese usuario y contraseña", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+
+
         If User.Text = "admin" And password.Text = "admin123" Then
             Dim Menu_Principal As New Menu_Principal()
             Menu_Principal.Show()
@@ -34,6 +41,11 @@ Public Class Login
     End Sub
 
     Private Sub password_KeyDown(sender As Object, e As KeyEventArgs) Handles password.KeyDown
+        If String.IsNullOrWhiteSpace(User.Text) Or String.IsNullOrWhiteSpace(password.Text) Then
+            MessageBox.Show("Por favor, ingrese usuario y contraseña", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
             btnLogin.PerformClick()
