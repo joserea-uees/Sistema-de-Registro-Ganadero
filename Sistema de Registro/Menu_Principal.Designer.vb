@@ -70,7 +70,7 @@ Partial Class Menu_Principal
         Me.exite.BackColor = System.Drawing.Color.Red
         Me.exite.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.exite.ForeColor = System.Drawing.Color.White
-        Me.exite.Location = New System.Drawing.Point(1013, 333)
+        Me.exite.Location = New System.Drawing.Point(1205, 651)
         Me.exite.Name = "exite"
         Me.exite.Size = New System.Drawing.Size(132, 66)
         Me.exite.TabIndex = 1
