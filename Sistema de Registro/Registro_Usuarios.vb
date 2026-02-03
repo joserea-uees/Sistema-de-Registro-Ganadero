@@ -9,8 +9,11 @@ Public Class Registro_Usuarios
 
         Dim nuevoUsuario As String = user.Text.Trim()
         Dim contrasena As String = password.Text.Trim()
-        Dim rol As String = "user"
-
+        If ComboBoxRoles.SelectedItem Is Nothing Then
+            MessageBox.Show("Por favor seleccione un rol para el usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+        Dim rol As String = ComboBoxRoles.SelectedItem.ToString()
         ' Hasheamos la contraseña ANTES de guardarla
         Dim hashContrasena As String = SeguridadPassword.HashPassword(contrasena)
 
@@ -55,7 +58,11 @@ Public Class Registro_Usuarios
         End Using
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxRoles.SelectedIndexChanged
-
+    Private Sub Registro_Usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Opciones de roles predefinidas
+        ComboBoxRoles.Items.Add("admin")
+        ComboBoxRoles.Items.Add("user")
+        ComboBoxRoles.Items.Add("Veterinario")
+        ComboBoxRoles.SelectedIndex = 1 ' Selecciona el primer rol por defecto
     End Sub
 End Class
