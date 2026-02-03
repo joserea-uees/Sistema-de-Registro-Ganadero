@@ -23,18 +23,18 @@ Partial Class Menu_Admin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.user = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.password = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.password = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.user = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -46,6 +46,16 @@ Partial Class Menu_Admin
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(220, 822)
         Me.Panel1.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Sistema_de_Registro.My.Resources.Resources.logoSinFondo1
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 43)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(164, 136)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -63,61 +73,15 @@ Partial Class Menu_Admin
         Me.Panel2.Size = New System.Drawing.Size(1037, 822)
         Me.Panel2.TabIndex = 1
         '
-        'PictureBox1
+        'Label3
         '
-        Me.PictureBox1.Image = Global.Sistema_de_Registro.My.Resources.Resources.logoSinFondo1
-        Me.PictureBox1.Location = New System.Drawing.Point(26, 43)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(164, 136)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'user
-        '
-        Me.user.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.user.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.user.Location = New System.Drawing.Point(99, 254)
-        Me.user.Name = "user"
-        Me.user.Size = New System.Drawing.Size(312, 37)
-        Me.user.TabIndex = 0
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(131, 554)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(170, 92)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(372, 554)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(170, 92)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(91, 65)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(437, 44)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Registro de Usuarios"
-        '
-        'password
-        '
-        Me.password.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.password.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.password.Location = New System.Drawing.Point(99, 365)
-        Me.password.Name = "password"
-        Me.password.Size = New System.Drawing.Size(312, 37)
-        Me.password.TabIndex = 5
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Verdana", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(94, 323)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(136, 26)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Contraseña"
         '
         'Label2
         '
@@ -129,15 +93,51 @@ Partial Class Menu_Admin
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Usuario"
         '
-        'Label3
+        'password
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(94, 323)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(136, 26)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Contraseña"
+        Me.password.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.password.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.password.Location = New System.Drawing.Point(99, 365)
+        Me.password.Name = "password"
+        Me.password.Size = New System.Drawing.Size(312, 37)
+        Me.password.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(91, 65)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(437, 44)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Registro de Usuarios"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(372, 554)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(170, 92)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Cancelar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(131, 554)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(170, 92)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Aceptar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'user
+        '
+        Me.user.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.user.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.user.Location = New System.Drawing.Point(99, 256)
+        Me.user.Name = "user"
+        Me.user.Size = New System.Drawing.Size(312, 37)
+        Me.user.TabIndex = 0
         '
         'Menu_Admin
         '
@@ -152,9 +152,9 @@ Partial Class Menu_Admin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Admin"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

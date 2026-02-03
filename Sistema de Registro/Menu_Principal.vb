@@ -3,4 +3,8 @@
         Me.Close()
 
     End Sub
+
+    Private Sub ToolStripStatusLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripStatusLabel2.Click
+
+    End Sub
 End Class
