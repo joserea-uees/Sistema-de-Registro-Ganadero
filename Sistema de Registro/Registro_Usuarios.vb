@@ -61,8 +61,8 @@ Public Class Registro_Usuarios
     Private Sub Registro_Usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Opciones de roles predefinidas
         ComboBoxRoles.Items.Add("<Seleccione>")
-        ComboBoxRoles.Items.Add("admin")
-        ComboBoxRoles.Items.Add("user")
+        ComboBoxRoles.Items.Add("Admin")
+        ComboBoxRoles.Items.Add("User")
         ComboBoxRoles.Items.Add("Veterinario")
         ComboBoxRoles.SelectedIndex = 0 ' Selecciona el primer rol por defecto
     End Sub

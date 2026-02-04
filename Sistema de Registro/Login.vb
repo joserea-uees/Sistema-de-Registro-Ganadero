@@ -47,6 +47,9 @@ Public Class Login
                                 Dim rol As String = reader("rol").ToString().Trim()
                                 'MessageBox.Show("Inicio de sesión exitoso. Rol: " & rol, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
+                                'Envia los datos al módulo EnvioDatos
+                                EnvioDatos.rol = rol
+                                EnvioDatos.userName = usuario
                                 'Abre el formulario correspondiente según el rol
                                 Select Case rol.ToLower()
                                     Case "admin", "administrador"

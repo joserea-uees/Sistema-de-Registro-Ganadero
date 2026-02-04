@@ -2,6 +2,10 @@
 
 Public Class Menu_Admin
 
+    Private Sub Menu_Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        userName.Text = EnvioDatos.userName
+        'rol.Text = EnvioDatos.rol
+    End Sub
 
     Private Sub AbrirFromEnPanel(ByVal formhijo As Object)
         If Me.Panel2.Controls.Count > 0 Then
@@ -26,4 +30,6 @@ Public Class Menu_Admin
         Me.Close()
 
     End Sub
+
+
 End Class

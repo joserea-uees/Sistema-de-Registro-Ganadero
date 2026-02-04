@@ -123,7 +123,7 @@ Partial Class Registro_Usuarios
         '
         'btnAceptar
         '
-        Me.btnAceptar.Location = New System.Drawing.Point(131, 554)
+        Me.btnAceptar.Location = New System.Drawing.Point(99, 554)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(170, 92)
         Me.btnAceptar.TabIndex = 2

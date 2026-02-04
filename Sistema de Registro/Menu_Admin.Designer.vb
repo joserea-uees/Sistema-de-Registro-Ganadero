@@ -23,6 +23,7 @@ Partial Class Menu_Admin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.userName = New System.Windows.Forms.Label()
         Me.logOut = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -37,6 +38,7 @@ Partial Class Menu_Admin
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DimGray
+        Me.Panel1.Controls.Add(Me.userName)
         Me.Panel1.Controls.Add(Me.logOut)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Button1)
@@ -46,6 +48,15 @@ Partial Class Menu_Admin
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(220, 822)
         Me.Panel1.TabIndex = 0
+        '
+        'userName
+        '
+        Me.userName.AutoSize = True
+        Me.userName.Location = New System.Drawing.Point(61, 213)
+        Me.userName.Name = "userName"
+        Me.userName.Size = New System.Drawing.Size(85, 20)
+        Me.userName.TabIndex = 4
+        Me.userName.Text = "UserName"
         '
         'logOut
         '
@@ -108,6 +119,7 @@ Partial Class Menu_Admin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Admin"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.logOut, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -121,4 +133,5 @@ Partial Class Menu_Admin
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents logOut As PictureBox
+    Friend WithEvents userName As Label
 End Class
