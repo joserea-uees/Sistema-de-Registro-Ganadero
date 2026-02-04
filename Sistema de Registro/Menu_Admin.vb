@@ -19,4 +19,11 @@ Public Class Menu_Admin
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         AbrirFromEnPanel(New Registro_Usuarios)
     End Sub
+
+    Private Sub Log0ut_Click(sender As Object, e As EventArgs) Handles logOut.Click
+        Dim loginForm As New Login()
+        loginForm.Show()
+        Me.Close()
+
+    End Sub
 End Class

@@ -75,11 +75,12 @@ Partial Class Registro_Usuarios
         '
         'ComboBoxRoles
         '
-        Me.ComboBoxRoles.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.ComboBoxRoles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBoxRoles.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ComboBoxRoles.FormattingEnabled = True
         Me.ComboBoxRoles.Location = New System.Drawing.Point(576, 256)
         Me.ComboBoxRoles.Name = "ComboBoxRoles"
-        Me.ComboBoxRoles.Size = New System.Drawing.Size(283, 44)
+        Me.ComboBoxRoles.Size = New System.Drawing.Size(283, 37)
         Me.ComboBoxRoles.TabIndex = 10
         '
         'Label4

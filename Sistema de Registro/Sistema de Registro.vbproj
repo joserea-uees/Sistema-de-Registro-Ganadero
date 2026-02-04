@@ -180,5 +180,8 @@
   <ItemGroup>
     <None Include="Resources\cerrar1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2026-02-04 102135.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
