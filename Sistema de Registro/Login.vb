@@ -62,8 +62,8 @@ Public Class Login
                                         MessageBox.Show("Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                                         Return
                                 End Select
-
-                                Me.Hide() 'Oculta el formulario de login
+                                Me.Close()
+                                'Me.Hide() 'Oculta el formulario de login
                             Else
                                 MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             End If
