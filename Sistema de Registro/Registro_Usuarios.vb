@@ -60,9 +60,16 @@ Public Class Registro_Usuarios
 
     Private Sub Registro_Usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Opciones de roles predefinidas
+        ComboBoxRoles.Items.Add("<Seleccione>")
         ComboBoxRoles.Items.Add("admin")
         ComboBoxRoles.Items.Add("user")
         ComboBoxRoles.Items.Add("Veterinario")
-        ComboBoxRoles.SelectedIndex = 1 ' Selecciona el primer rol por defecto
+        ComboBoxRoles.SelectedIndex = 0 ' Selecciona el primer rol por defecto
+    End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        user.Clear()
+        password.Clear()
+        ComboBoxRoles.SelectedIndex = 0
     End Sub
 End Class

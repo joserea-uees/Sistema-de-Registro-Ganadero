@@ -9,12 +9,12 @@ Public Class Menu_Admin
         End If
 
         Dim fh As Form = TryCast(formhijo, Form)
-            fh.TopLevel = False
-            fh.FormBorderStyle = Windows.Forms.FormBorderStyle.None
-            fh.Dock = DockStyle.Fill
-            Me.Panel2.Controls.Add(fh)
-            Me.Panel2.Tag = fh
-            fh.Show()
+        fh.TopLevel = False
+        fh.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+        fh.Dock = DockStyle.Fill
+        Me.Panel2.Controls.Add(fh)
+        Me.Panel2.Tag = fh
+        fh.Show()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         AbrirFromEnPanel(New Registro_Usuarios)

@@ -25,13 +25,13 @@ Partial Class Registro_Usuarios
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ComboBoxRoles = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.password = New System.Windows.Forms.TextBox()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.user = New System.Windows.Forms.TextBox()
-        Me.ComboBoxRoles = New System.Windows.Forms.ComboBox()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,6 +72,15 @@ Partial Class Registro_Usuarios
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1198, 719)
         Me.Panel2.TabIndex = 2
+        '
+        'ComboBoxRoles
+        '
+        Me.ComboBoxRoles.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.ComboBoxRoles.FormattingEnabled = True
+        Me.ComboBoxRoles.Location = New System.Drawing.Point(576, 256)
+        Me.ComboBoxRoles.Name = "ComboBoxRoles"
+        Me.ComboBoxRoles.Size = New System.Drawing.Size(283, 44)
+        Me.ComboBoxRoles.TabIndex = 10
         '
         'Label4
         '
@@ -128,14 +137,6 @@ Partial Class Registro_Usuarios
         Me.user.Name = "user"
         Me.user.Size = New System.Drawing.Size(312, 37)
         Me.user.TabIndex = 0
-        '
-        'ComboBoxRoles
-        '
-        Me.ComboBoxRoles.FormattingEnabled = True
-        Me.ComboBoxRoles.Location = New System.Drawing.Point(576, 256)
-        Me.ComboBoxRoles.Name = "ComboBoxRoles"
-        Me.ComboBoxRoles.Size = New System.Drawing.Size(255, 28)
-        Me.ComboBoxRoles.TabIndex = 10
         '
         'Registro_Usuarios
         '
