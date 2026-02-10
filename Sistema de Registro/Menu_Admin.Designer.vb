@@ -23,6 +23,8 @@ Partial Class Menu_Admin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.btnLogOut = New FontAwesome.Sharp.IconButton()
         Me.btnRegistro = New FontAwesome.Sharp.IconButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -41,6 +43,8 @@ Partial Class Menu_Admin
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DimGray
+        Me.Panel1.Controls.Add(Me.IconButton2)
+        Me.Panel1.Controls.Add(Me.IconButton1)
         Me.Panel1.Controls.Add(Me.btnLogOut)
         Me.Panel1.Controls.Add(Me.btnRegistro)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -49,6 +53,39 @@ Partial Class Menu_Admin
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(220, 822)
         Me.Panel1.TabIndex = 0
+        '
+        'IconButton2
+        '
+        Me.IconButton2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass
+        Me.IconButton2.IconColor = System.Drawing.Color.Black
+        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton2.IconSize = 40
+        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton2.Location = New System.Drawing.Point(12, 418)
+        Me.IconButton2.Name = "IconButton2"
+        Me.IconButton2.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
+        Me.IconButton2.Size = New System.Drawing.Size(194, 49)
+        Me.IconButton2.TabIndex = 18
+        Me.IconButton2.Text = "Datos"
+        Me.IconButton2.UseVisualStyleBackColor = True
+        '
+        'IconButton1
+        '
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.UserGear
+        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 40
+        Me.IconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton1.Location = New System.Drawing.Point(12, 330)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
+        Me.IconButton1.Size = New System.Drawing.Size(194, 49)
+        Me.IconButton1.TabIndex = 17
+        Me.IconButton1.Text = "Conf. Usuario"
+        Me.IconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton1.UseVisualStyleBackColor = True
         '
         'btnLogOut
         '
@@ -169,4 +206,6 @@ Partial Class Menu_Admin
     Friend WithEvents rol As ToolStripStatusLabel
     Friend WithEvents btnRegistro As FontAwesome.Sharp.IconButton
     Friend WithEvents btnLogOut As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
 End Class

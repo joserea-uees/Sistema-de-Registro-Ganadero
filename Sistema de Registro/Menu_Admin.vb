@@ -30,4 +30,7 @@ Public Class Menu_Admin
     Private Sub btnRegistro_Click(sender As Object, e As EventArgs) Handles btnRegistro.Click
         AbrirFromEnPanel(New Registro_Usuarios)
     End Sub
+
+
+
 End Class
