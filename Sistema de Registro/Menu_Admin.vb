@@ -20,16 +20,14 @@ Public Class Menu_Admin
         Me.Panel2.Tag = fh
         fh.Show()
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        AbrirFromEnPanel(New Registro_Usuarios)
-    End Sub
 
-    Private Sub Log0ut_Click(sender As Object, e As EventArgs) Handles logOut.Click
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         Dim loginForm As New Login()
         loginForm.Show()
         Me.Close()
-
     End Sub
 
-
+    Private Sub btnRegistro_Click(sender As Object, e As EventArgs) Handles btnRegistro.Click
+        AbrirFromEnPanel(New Registro_Usuarios)
+    End Sub
 End Class

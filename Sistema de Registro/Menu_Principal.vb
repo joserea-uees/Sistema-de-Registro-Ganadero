@@ -8,7 +8,8 @@
 
     End Sub
 
-    Private Sub logOut_Click(sender As Object, e As EventArgs) Handles logOut.Click
+
+    Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         Dim loginForm As New Login()
         loginForm.Show()
         Me.Close()

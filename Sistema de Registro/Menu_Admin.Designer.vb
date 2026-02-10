@@ -23,9 +23,8 @@ Partial Class Menu_Admin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.logOut = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnLogOut = New FontAwesome.Sharp.IconButton()
+        Me.btnRegistro = New FontAwesome.Sharp.IconButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
@@ -34,8 +33,6 @@ Partial Class Menu_Admin
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.rol = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Panel1.SuspendLayout()
-        CType(Me.logOut, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -44,9 +41,8 @@ Partial Class Menu_Admin
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DimGray
-        Me.Panel1.Controls.Add(Me.logOut)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btnLogOut)
+        Me.Panel1.Controls.Add(Me.btnRegistro)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -54,34 +50,38 @@ Partial Class Menu_Admin
         Me.Panel1.Size = New System.Drawing.Size(220, 822)
         Me.Panel1.TabIndex = 0
         '
-        'logOut
+        'btnLogOut
         '
-        Me.logOut.Image = Global.Sistema_de_Registro.My.Resources.Resources.logOut
-        Me.logOut.Location = New System.Drawing.Point(12, 725)
-        Me.logOut.Name = "logOut"
-        Me.logOut.Size = New System.Drawing.Size(192, 64)
-        Me.logOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.logOut.TabIndex = 3
-        Me.logOut.TabStop = False
+        Me.btnLogOut.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.ArrowRight
+        Me.btnLogOut.IconColor = System.Drawing.Color.Black
+        Me.btnLogOut.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnLogOut.IconSize = 40
+        Me.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogOut.Location = New System.Drawing.Point(12, 761)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Padding = New System.Windows.Forms.Padding(30, 2, 0, 0)
+        Me.btnLogOut.Size = New System.Drawing.Size(194, 49)
+        Me.btnLogOut.TabIndex = 16
+        Me.btnLogOut.Text = "Salir"
+        Me.btnLogOut.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'btnRegistro
         '
-        Me.PictureBox2.Image = Global.Sistema_de_Registro.My.Resources.Resources.user
-        Me.PictureBox2.Location = New System.Drawing.Point(6, 258)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(53, 43)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(65, 258)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(139, 43)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Crear Usuario"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRegistro.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnRegistro.IconChar = FontAwesome.Sharp.IconChar.UserPlus
+        Me.btnRegistro.IconColor = System.Drawing.Color.Black
+        Me.btnRegistro.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnRegistro.IconSize = 40
+        Me.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRegistro.Location = New System.Drawing.Point(12, 252)
+        Me.btnRegistro.Name = "btnRegistro"
+        Me.btnRegistro.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
+        Me.btnRegistro.Size = New System.Drawing.Size(194, 49)
+        Me.btnRegistro.TabIndex = 13
+        Me.btnRegistro.Text = "Crear Usuario"
+        Me.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRegistro.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -139,8 +139,8 @@ Partial Class Menu_Admin
         '
         'Menu_Admin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(144.0!, 144.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(1257, 822)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -150,8 +150,6 @@ Partial Class Menu_Admin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Admin"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.logOut, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -164,12 +162,11 @@ Partial Class Menu_Admin
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents logOut As PictureBox
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents userName As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel3 As ToolStripStatusLabel
     Friend WithEvents rol As ToolStripStatusLabel
+    Friend WithEvents btnRegistro As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnLogOut As FontAwesome.Sharp.IconButton
 End Class

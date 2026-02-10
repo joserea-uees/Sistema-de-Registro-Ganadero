@@ -23,120 +23,120 @@ Partial Class Menu_Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnLogOut = New FontAwesome.Sharp.IconButton()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.btnGraficas = New FontAwesome.Sharp.IconButton()
+        Me.btnRegistro = New FontAwesome.Sharp.IconButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.logOut = New System.Windows.Forms.PictureBox()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.userName = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.rol = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.logOut, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DimGray
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.btnLogOut)
+        Me.Panel1.Controls.Add(Me.IconButton1)
+        Me.Panel1.Controls.Add(Me.btnGraficas)
+        Me.Panel1.Controls.Add(Me.btnRegistro)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.logOut)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(219, 752)
+        Me.Panel1.Size = New System.Drawing.Size(219, 798)
         Me.Panel1.TabIndex = 1
         '
-        'PictureBox5
+        'btnLogOut
         '
-        Me.PictureBox5.Image = Global.Sistema_de_Registro.My.Resources.Resources.grafico_histograma
-        Me.PictureBox5.Location = New System.Drawing.Point(12, 427)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(53, 43)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 10
-        Me.PictureBox5.TabStop = False
+        Me.btnLogOut.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.ArrowRight
+        Me.btnLogOut.IconColor = System.Drawing.Color.Black
+        Me.btnLogOut.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnLogOut.IconSize = 40
+        Me.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLogOut.Location = New System.Drawing.Point(12, 680)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Padding = New System.Windows.Forms.Padding(30, 2, 0, 0)
+        Me.btnLogOut.Size = New System.Drawing.Size(194, 49)
+        Me.btnLogOut.TabIndex = 15
+        Me.btnLogOut.Text = "Salir"
+        Me.btnLogOut.UseVisualStyleBackColor = True
         '
-        'Button4
+        'IconButton1
         '
-        Me.Button4.Location = New System.Drawing.Point(71, 427)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(135, 43)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Graficas"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.IconButton1.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.ChartLine
+        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 40
+        Me.IconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton1.Location = New System.Drawing.Point(12, 440)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Padding = New System.Windows.Forms.Padding(16, 2, 26, 0)
+        Me.IconButton1.Size = New System.Drawing.Size(194, 49)
+        Me.IconButton1.TabIndex = 14
+        Me.IconButton1.Text = "Graficas"
+        Me.IconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton1.UseVisualStyleBackColor = True
         '
-        'PictureBox4
+        'btnGraficas
         '
-        Me.PictureBox4.Image = Global.Sistema_de_Registro.My.Resources.Resources.grafico_histograma
-        Me.PictureBox4.Location = New System.Drawing.Point(12, 341)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(53, 43)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 8
-        Me.PictureBox4.TabStop = False
+        Me.btnGraficas.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGraficas.IconChar = FontAwesome.Sharp.IconChar.ChartLine
+        Me.btnGraficas.IconColor = System.Drawing.Color.Black
+        Me.btnGraficas.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnGraficas.IconSize = 40
+        Me.btnGraficas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnGraficas.Location = New System.Drawing.Point(12, 351)
+        Me.btnGraficas.Name = "btnGraficas"
+        Me.btnGraficas.Padding = New System.Windows.Forms.Padding(16, 2, 26, 0)
+        Me.btnGraficas.Size = New System.Drawing.Size(194, 49)
+        Me.btnGraficas.TabIndex = 13
+        Me.btnGraficas.Text = "Graficas"
+        Me.btnGraficas.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnGraficas.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnRegistro
         '
-        Me.Button3.Location = New System.Drawing.Point(71, 341)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(135, 43)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Graficas"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Sistema_de_Registro.My.Resources.Resources.editar
-        Me.PictureBox3.Location = New System.Drawing.Point(12, 250)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(53, 43)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 6
-        Me.PictureBox3.TabStop = False
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(71, 250)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(135, 43)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Registro"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnRegistro.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistro.IconChar = FontAwesome.Sharp.IconChar.CloudUploadAlt
+        Me.btnRegistro.IconColor = System.Drawing.Color.Black
+        Me.btnRegistro.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnRegistro.IconSize = 40
+        Me.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnRegistro.Location = New System.Drawing.Point(12, 263)
+        Me.btnRegistro.Name = "btnRegistro"
+        Me.btnRegistro.Padding = New System.Windows.Forms.Padding(16, 2, 26, 0)
+        Me.btnRegistro.Size = New System.Drawing.Size(194, 49)
+        Me.btnRegistro.TabIndex = 12
+        Me.btnRegistro.Text = "Registro"
+        Me.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRegistro.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Sistema_de_Registro.My.Resources.Resources.grafico_histograma
         Me.PictureBox2.Location = New System.Drawing.Point(12, 518)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(53, 43)
+        Me.PictureBox2.Size = New System.Drawing.Size(52, 43)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(71, 518)
+        Me.Button1.Location = New System.Drawing.Point(70, 518)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 43)
         Me.Button1.TabIndex = 5
@@ -146,30 +146,21 @@ Partial Class Menu_Principal
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Sistema_de_Registro.My.Resources.Resources.logoSinFondo1
-        Me.PictureBox1.Location = New System.Drawing.Point(18, 33)
+        Me.PictureBox1.Location = New System.Drawing.Point(18, 32)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(164, 136)
+        Me.PictureBox1.Size = New System.Drawing.Size(164, 135)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
-        '
-        'logOut
-        '
-        Me.logOut.Image = Global.Sistema_de_Registro.My.Resources.Resources.logOut
-        Me.logOut.Location = New System.Drawing.Point(18, 680)
-        Me.logOut.Name = "logOut"
-        Me.logOut.Size = New System.Drawing.Size(188, 60)
-        Me.logOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.logOut.TabIndex = 4
-        Me.logOut.TabStop = False
         '
         'StatusStrip1
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.userName, Me.ToolStripStatusLabel3, Me.rol})
-        Me.StatusStrip1.Location = New System.Drawing.Point(219, 720)
+        Me.StatusStrip1.Location = New System.Drawing.Point(219, 766)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1130, 32)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(2, 0, 14, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1329, 32)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -177,7 +168,7 @@ Partial Class Menu_Principal
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(76, 25)
-        Me.ToolStripStatusLabel1.Text = "Uusario:"
+        Me.ToolStripStatusLabel1.Text = "Usuario:"
         '
         'userName
         '
@@ -199,9 +190,9 @@ Partial Class Menu_Principal
         '
         'Menu_Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1349, 752)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(144.0!, 144.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.ClientSize = New System.Drawing.Size(1548, 798)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
@@ -210,12 +201,8 @@ Partial Class Menu_Principal
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Principal"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.logOut, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -223,19 +210,16 @@ Partial Class Menu_Principal
 
     End Sub
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents logOut As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Button2 As Button
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents userName As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel3 As ToolStripStatusLabel
     Friend WithEvents rol As ToolStripStatusLabel
+    Friend WithEvents btnRegistro As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnGraficas As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnLogOut As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class
